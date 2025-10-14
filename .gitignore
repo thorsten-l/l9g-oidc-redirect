@@ -1,0 +1,11 @@
+.DS_Store
+private/
+target/
+*.log
+*.tmp
+*.bak
+config.yaml
+server.p12
+nb-configuration.xml
+l9g-oidc-redirect.jar
+docker/l9g-oidc-redirect.jar

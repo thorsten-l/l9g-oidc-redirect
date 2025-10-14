@@ -1,0 +1,19 @@
+services:
+ 
+  redirect-global:
+    image: ghcr.io/thorsten-l/l9g-oidc-redirect:latest
+    container_name: l9g-oidc-redirect
+    hostname: redirect-global.dev.sonia.de
+    restart: unless-stopped
+    volumes:
+      - ../config.yaml:/workspace/config.yaml
+      - ../server.p12:/workspace/server.p12
+    environment:
+      - TZ=Europe/Berlin
+    ports:
+      - "40443:40443"
+
+networks:
+  default:
+    name: fop
+    external: true
