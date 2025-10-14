@@ -3,8 +3,8 @@
 TAGS=""
 
 while (( $# )); do
-  TAGS="$TAGS --tag ghcr.io/thorsten-l/l9g-oidc-info:$1"
-  TAGS="$TAGS --tag tludewig/l9g-oidc-info:$1"
+  TAGS="$TAGS --tag ghcr.io/thorsten-l/l9g-oidc-redirect:$1"
+  TAGS="$TAGS --tag tludewig/l9g-oidc-redirect:$1"
   shift
 done
 

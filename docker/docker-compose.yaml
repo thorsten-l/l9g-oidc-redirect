@@ -11,7 +11,7 @@ services:
     environment:
       - TZ=Europe/Berlin
     ports:
-      - "40443:40443"
+      - "10444:10444"
 
 networks:
   default:
