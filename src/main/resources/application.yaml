@@ -22,3 +22,16 @@ server:
     context-path: /
     session:
       timeout: 9h
+
+management:
+  server:
+    port: 9001
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      probes:
+        enabled: true
+      show-details: never
